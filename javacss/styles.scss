@@ -1,0 +1,88 @@
+* {
+    font-family: Calibri, sans-serif; /* Mejoré la fuente con un fallback */
+    background-color: white; /* Fondo blanco para toda la página */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: black;
+}
+body {
+    background-color: aliceblue; /* Fondo azul claro para el cuerpo */
+    padding: 20px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #0055b3; /* Azul francés para los enlaces */
+    transition: ease 0.3s; /* Corregí el tiempo de transición (era 0.5ms, ahora 0.3s) */
+}
+
+.link:hover {
+    transform: scale(1.1);
+    color: #003366; /* Azul más oscuro al hacer hover */
+}
+
+.fwork {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: white; /* Fondo blanco para los cuadros de frameworks */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fwork:hover {
+    transform: translateY(-5px); /* Efecto de levantar al hacer hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#react, #vuejs, #angular {
+    flex-direction: column;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    color: #0055b3; /* Azul francés para los títulos */
+}
+
+h3 {
+    color: #0055b3; /* Azul francés para los nombres de los frameworks */
+    margin-top: 10px;
+}
+
+.definicion {
+    color: #333; /* Color de texto oscuro para mejor legibilidad */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #0055b3; /* Azul francés para el encabezado */
+    color: white; /* Texto blanco para contrastar */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #0055b3; /* Línea divisoria en azul francés */
+    margin: 20px 0;
+}
